@@ -27,7 +27,7 @@ async function fetchData() {
 };
 
 async function updateForumId(cell, newId) {
-  const ranges = 'data!' + cell;
+  const ranges = `data!${cell}`;
   const values = [[newId]];
 
   try {
